@@ -1,0 +1,11 @@
+﻿@model string
+
+<script type="text/javascript">
+  (function(url) {
+    if (url.indexOf("?") === -1) {
+      url = url + window.location.search;
+    }
+
+    window.location.href = url;
+  })("@Model");
+</script>
